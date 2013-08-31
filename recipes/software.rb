@@ -20,7 +20,7 @@ namespace :soft do
         desc "Install Development Tools"
         task :install_dev do
 			sudo "apt-get install build-essential git-core git-svn openssl libssl-dev -y"
-			sudo "grep -q \"alias gitcommit='git commit -am'\" /root/.bashrc || echo \"alias gitcommit='git commit -am'\" >> /root/.bashrc"
+			sudo "grep -q \"alias gitcommit='git add *;git commit -am'\" /root/.bashrc || echo \"alias gitcommit='git add *;git commit -am'\" >> /root/.bashrc"
 			sudo "grep -q \"alias gitpush='git push origin master'\" /root/.bashrc || echo \"alias gitpush='git push origin master'\" >> /root/.bashrc"
         end
 
