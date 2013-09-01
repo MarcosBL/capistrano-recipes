@@ -1,6 +1,6 @@
 Capistrano::Configuration.instance(true).load do
 namespace :mysql do
-    desc "Install Mysql-server"
+    desc "Install Mysql Server"
     task :install do
       begin
         # Ask user for a password to configure for external access
